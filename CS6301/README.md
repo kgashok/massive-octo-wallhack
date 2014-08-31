@@ -9,7 +9,7 @@
 ### Structure of Project
 Here's a map of the files in this project, and pretty much self-explanatory. 
 
-![Image](img/directory_map.PNG?raw=true)
+![Image](img/directory_map.png?raw=true)
 
 
 ### Github link
