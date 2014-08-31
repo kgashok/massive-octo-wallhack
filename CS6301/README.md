@@ -1,13 +1,15 @@
 ### World-class Lab Environment
 
-Eclipse - a industry strength IDE
-Google Unit Testing Framework 
-Git - for version control and opportunities for Mentors to give you expert advice. 
+1. Eclipse - a industry strength IDE
+
+2. Google Unit Testing Framework
+
+3. `Git` - for version control and opportunities for **mentors** (_far and near, and the world over_) to give you expert advice. 
 
 ### Structure of Project
 Here's a map of the files in this project, and pretty much self-explanatory. 
 
-> ![Image](img/directory_map.PNG?raw=true)
+![Image](img/directory_map.PNG?raw=true)
 
 
 ### Github link
