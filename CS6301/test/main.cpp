@@ -2,7 +2,7 @@
  * main.cpp
  *
  *  Created on: Aug 29, 2014
- *      Author: lifebalance
+ *      Author: KITE CSE
  */
 
 

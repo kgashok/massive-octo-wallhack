@@ -7,7 +7,8 @@
 I shall capture all of it one [place](doc/TODO.md)
 
 ### Structure of Project
-Here's a map of the files in this project, and pretty much self-explanatory. 
+Here's a map of the files in this project, and pretty much self-explanatory. There are four components for which unit test cases have been generated.
+Clean separation between interface files and implementation files has been established.
 
 ![Image](img/directory_map.png?raw=true)
 
