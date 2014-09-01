@@ -20,6 +20,7 @@ class LongTest : public ::testing::Test {
 TEST_F(LongTest, SimpleTest)
 {
 	ASSERT_TRUE(true);
+	ASSERT_EQ(true, true);
 }
 
 TEST_F(LongTest, Life)
@@ -69,7 +70,8 @@ TEST_F(LongTest, WorldHello)
 
 TEST_F(LongTest, JustaComma)
 {
-	ASSERT_EQ("", longest_word(" ; "));
+
+	ASSERT_EQ("NA", longest_word(" ; "));
 }
 
 TEST_F(LongTest, Illegal)
