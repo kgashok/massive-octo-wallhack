@@ -13,7 +13,6 @@ Dog defPet("NoName");
 
 class DogTest : public ::testing::Test {
 protected:
-	// Dog d("Doggie");
 	Dog& d;
 	Cat* c;
 public:
@@ -40,5 +39,32 @@ TEST_F(DogTest, OnceMoreTest)
 	d = another_dog;
 
 	ASSERT_EQ ("Doggie the Dog says: Woof! Woof!\n", d.MakeSound2());
+
+}
+
+TEST_F(DogTest, Destructors)
+{
+	Dog* a_dog = new Dog("Frankie");
+	delete a_dog;
+
+	// When you uncomment the following lines, the compiler complains.
+	// What do you need to do to fix this?
+	// Pet* a_pet = new Pet("NoName");
+	// delete a_pet;
+
+}
+
+TEST_F(DogTest, CatPass)
+{
+	ASSERT_TRUE(true);
+
+}
+
+TEST_F(DogTest, CatPass2)
+{
+	const char* n = "Kittie";
+	c =  new Cat (n);
+
+	ASSERT_EQ("Kittie the Cat says: Meow! Meow!\n", c->MakeSound2());
 
 }

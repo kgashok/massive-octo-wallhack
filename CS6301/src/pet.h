@@ -19,13 +19,13 @@ public:
 	virtual int MakeSound1();
 	virtual string MakeSound2();
 	void WakeUp();
-	virtual ~ Pet();
+	virtual ~Pet() = 0;
 };
 class Cat: public Pet {
 public:
 	Cat();
 	Cat(string n);
-	Cat(char const *n);
+	Cat(const char *n);
 	void MakeSound();
 	virtual string MakeSound2();
 };

@@ -95,10 +95,12 @@ Pet::WakeUp()
  *  Params: 
  * Effects: 
  ***********************************************************************/
+
 Pet::~Pet()
 {
     cerr << "Pet::~Pet()" << endl;
 }
+
 
 
 /***********************************************************************
@@ -202,8 +204,6 @@ Dog::MakeSound()
  * Returns: string
  * Effects: 
  ***********************************************************************/
-
-
 string
 Dog::MakeSound2()
 {
@@ -215,15 +215,15 @@ Dog::MakeSound2()
 }
 
 
-inline Cat::Cat() :
+Cat::Cat() :
 		Pet() {
 }
 
-inline Cat::Cat(const char* n) :
+Cat::Cat(const char* n) :
 		Pet(n) {
 }
 
-inline string Cat::MakeSound2(void) {
+string Cat::MakeSound2(void) {
 	string dummy;
 
 	return dummy;
