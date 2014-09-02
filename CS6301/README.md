@@ -3,6 +3,10 @@
 2. Google Unit Testing Framework
 3. `Git` - for version control and opportunities for **mentors** (_far and near, and the world over_) to give you expert advice. 
 
+### How to set up?
+C++ unit test start guide, how to set up Google Test (gtest) in Eclipse? - CodeProject http://buff.ly/1qmkiBQ 
+A 8 minute video - Setup Eclipse with Google Test - YouTube http://buff.ly/1oAYFII 
+
 ### Improvement Ideas?
 I shall capture all of it one [place](doc/TODO.md)
 
