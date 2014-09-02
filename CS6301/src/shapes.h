@@ -11,11 +11,11 @@ protected:
   int * height;
 public:
   Shape (int a = 0, int b = 0);
-  int area ();
+  virtual int area ();
   int get_dimension1 ();
-  int * getHeight () const;
+  int * getHeight ();
   void setHeight (int * height);
-  int * getWidth () const;
+  int * getWidth ();
   void setWidth (int * width);
 };
 class Rectangle : public Shape

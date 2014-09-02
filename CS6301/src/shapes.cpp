@@ -58,7 +58,7 @@ Shape::get_dimension1()
  * Effects: 
  ***********************************************************************/
 int *
-Shape::getHeight() const
+Shape::getHeight()
 {
     cerr << "Shape::getHeight()" << endl;
     return NULL;
@@ -85,7 +85,7 @@ Shape::setHeight(int *height)
  * Effects: 
  ***********************************************************************/
 int *
-Shape::getWidth() const
+Shape::getWidth()
 {
     cerr << "Shape::getWidth()" << endl;
     return NULL;
