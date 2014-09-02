@@ -7,6 +7,9 @@
 C++ unit test start guide, how to set up Google Test (gtest) in Eclipse? - CodeProject http://buff.ly/1qmkiBQ 
 A 8 minute video - Setup Eclipse with Google Test - YouTube http://buff.ly/1oAYFII 
 
+### Advanced
+Creating a Repository: Git & Eclipse - YouTube http://buff.ly/1oB25Lv 
+
 ### Improvement Ideas?
 I shall capture all of it one [place](doc/TODO.md)
 
