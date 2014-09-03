@@ -11,7 +11,7 @@ protected:
   int * height;
 public:
   Shape (int a = 0, int b = 0);
-  virtual int area ();
+  int area ();
   int get_dimension1 ();
   int * getHeight ();
   void setHeight (int * height);
