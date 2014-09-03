@@ -67,3 +67,16 @@ TEST_F(ShapeTest, SetterGetters) {
 
 	ASSERT_EQ(1000, shape->area());
 }
+
+TEST_F(ShapeTest, SetterGetters2) {
+
+	shape = new Rectangle(0,0);
+	ASSERT_EQ(0,  shape->area() );
+
+	int height = 10;
+	int width = 100;
+	shape->setHeight(&height);
+	shape->setWidth(&width);
+
+	ASSERT_EQ(1000, shape->area());
+}
