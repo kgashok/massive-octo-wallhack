@@ -5,6 +5,7 @@
     - Why not? "gtest - Google Test is Chromium's C++ test harness." http://buff.ly/1nVqBYp 
 3. `Git` - for version control and opportunities for **mentors** (_far and near, and the world over_) to give you expert advice. 
 
+
 ### How to set up?
 The first one is a good description of how to go about it, systematically. 
 - C++ unit test start guide, how to set up Google Test (gtest) in Eclipse? - CodeProject http://buff.ly/1qmkiBQ 
