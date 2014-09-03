@@ -13,8 +13,9 @@ If you prefer to follow through visually (I prefer this), this should help:
 - A 8 minute video - Setup Eclipse with Google Test - YouTube http://buff.ly/1oAYFII 
 
 ### Advanced
-Dr Fraser's video is excellent. Worth following through, but be ready to spend time on this. 
-- Creating a Repository: Git & Eclipse - YouTube http://buff.ly/1oB25Lv 
+- Dr Fraser's video is excellent. Worth following through, but be ready to spend time on this. 
+   "Creating a Repository: Git & Eclipse" - YouTube http://buff.ly/1oB25Lv 
+- Eclipse - Git - Quick how tos. - YouTube http://buff.ly/1CpC0tj
 
 ### Improvement Ideas?
 I shall capture all of it one [place](doc/TODO.md)
