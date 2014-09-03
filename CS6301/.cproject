@@ -18,7 +18,12 @@
 					<folderInfo id="cdt.managedbuild.config.gnu.cygwin.exe.debug.927448123." name="/" resourcePath="">
 						<toolChain id="cdt.managedbuild.toolchain.gnu.cygwin.exe.debug.2073274816" name="Cygwin GCC" superClass="cdt.managedbuild.toolchain.gnu.cygwin.exe.debug">
 							<targetPlatform id="cdt.managedbuild.target.gnu.platform.cygwin.exe.debug.603545407" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.cygwin.exe.debug"/>
-							<builder buildPath="${workspace_loc:/CS6301}/Debug" id="cdt.managedbuild.target.gnu.builder.cygwin.exe.debug.1106256831" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.cygwin.exe.debug"/>
+							<builder buildPath="${workspace_loc:/CS6301}/Debug" id="cdt.managedbuild.target.gnu.builder.cygwin.exe.debug.1106256831" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.cygwin.exe.debug">
+								<outputEntries>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Debug"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Release"/>
+								</outputEntries>
+							</builder>
 							<tool id="cdt.managedbuild.tool.gnu.assembler.cygwin.exe.debug.787087194" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.cygwin.exe.debug">
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.568170499" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
@@ -47,58 +52,54 @@
 						<toolChain id="cdt.managedbuild.toolchain.gnu.cygwin.exe.debug.124139581" name="Cygwin GCC" superClass="cdt.managedbuild.toolchain.gnu.cygwin.exe.debug" unusedChildren="">
 							<targetPlatform id="cdt.managedbuild.target.gnu.platform.cygwin.exe.debug" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.cygwin.exe.debug"/>
 							<tool id="cdt.managedbuild.tool.gnu.assembler.cygwin.exe.debug.253320441" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.cygwin.exe.debug.787087194">
+								<option id="gnu.both.asm.option.include.paths.1990590159" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="C:/Users/Advik/git/LabWork/CS6301/CS6301/mgt2/external"/>
+									<listOptionValue builtIn="false" value="C:/Users/Advik/git/LabWork/CS6301/CS6301/CS6301/src"/>
+								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1364289311" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.archiver.cygwin.base.1448213019" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.cygwin.base.1945954025"/>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.debug.163961093" name="Cygwin C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.debug.485147389">
 								<option id="gnu.cpp.compiler.option.include.paths.1568698101" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mgt2/external}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src}&quot;"/>
+									<listOptionValue builtIn="false" value="C:/Users/Advik/git/LabWork/CS6301/CS6301/mgt2/external"/>
+									<listOptionValue builtIn="false" value="C:/Users/Advik/git/LabWork/CS6301/CS6301/CS6301/src"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.1917910295" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.compiler.cygwin.exe.debug.2028251010" name="Cygwin C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.cygwin.exe.debug.2065547499">
+								<option id="gnu.c.compiler.option.include.paths.1151308288" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="C:/Users/Advik/git/LabWork/CS6301/CS6301/mgt2/external"/>
+									<listOptionValue builtIn="false" value="C:/Users/Advik/git/LabWork/CS6301/CS6301/CS6301/src"/>
+								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.141412598" superClass="cdt.managedbuild.tool.gnu.c.compiler.input.cygwin"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.linker.cygwin.exe.debug.205249659" name="Cygwin C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.cygwin.exe.debug.1184929732"/>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.cygwin.exe.debug.1854965863" name="Cygwin C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.cygwin.exe.debug.1849883553"/>
 						</toolChain>
 					</folderInfo>
-					<folderInfo id="cdt.managedbuild.config.gnu.cygwin.exe.debug.927448123.235973794" name="/" resourcePath="external">
-						<toolChain id="cdt.managedbuild.toolchain.gnu.cygwin.exe.debug.105538862" name="Cygwin GCC" superClass="cdt.managedbuild.toolchain.gnu.cygwin.exe.debug" unusedChildren="">
-							<targetPlatform id="cdt.managedbuild.target.gnu.platform.cygwin.exe.debug" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.cygwin.exe.debug"/>
-							<tool id="cdt.managedbuild.tool.gnu.assembler.cygwin.exe.debug.1348657568" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.cygwin.exe.debug.787087194">
-								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.196807005" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
-							</tool>
-							<tool id="cdt.managedbuild.tool.gnu.archiver.cygwin.base.506470480" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.cygwin.base.1945954025"/>
-							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.debug.2078115951" name="Cygwin C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.debug.485147389">
-								<option id="gnu.cpp.compiler.option.include.paths.662237179" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/external}&quot;"/>
-								</option>
-								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.361174776" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin"/>
-							</tool>
-							<tool id="cdt.managedbuild.tool.gnu.c.compiler.cygwin.exe.debug.1084829573" name="Cygwin C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.cygwin.exe.debug.2065547499">
-								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.783600675" superClass="cdt.managedbuild.tool.gnu.c.compiler.input.cygwin"/>
-							</tool>
-							<tool id="cdt.managedbuild.tool.gnu.c.linker.cygwin.exe.debug.1592993623" name="Cygwin C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.cygwin.exe.debug.1184929732"/>
-							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.cygwin.exe.debug.63524627" name="Cygwin C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.cygwin.exe.debug.1849883553"/>
-						</toolChain>
-					</folderInfo>
 					<folderInfo id="cdt.managedbuild.config.gnu.cygwin.exe.debug.927448123.1719457116" name="/" resourcePath="src">
 						<toolChain id="cdt.managedbuild.toolchain.gnu.cygwin.exe.debug.1325895115" name="Cygwin GCC" superClass="cdt.managedbuild.toolchain.gnu.cygwin.exe.debug" unusedChildren="">
 							<targetPlatform id="cdt.managedbuild.target.gnu.platform.cygwin.exe.debug" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.cygwin.exe.debug"/>
 							<tool id="cdt.managedbuild.tool.gnu.assembler.cygwin.exe.debug.432484041" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.cygwin.exe.debug.787087194">
+								<option id="gnu.both.asm.option.include.paths.1350119035" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="C:/Users/Advik/git/LabWork/CS6301/CS6301/CS6301/src"/>
+									<listOptionValue builtIn="false" value="C:/Users/Advik/git/LabWork/CS6301/CS6301/external"/>
+								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.2128565934" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.archiver.cygwin.base.13754196" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.cygwin.base.1945954025"/>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.debug.720637622" name="Cygwin C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.debug.485147389">
 								<option id="gnu.cpp.compiler.option.include.paths.1761234006" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/external}&quot;"/>
+									<listOptionValue builtIn="false" value="C:/Users/Advik/git/LabWork/CS6301/CS6301/CS6301/src"/>
+									<listOptionValue builtIn="false" value="C:/Users/Advik/git/LabWork/CS6301/CS6301/external"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.1995033677" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.compiler.cygwin.exe.debug.1116688189" name="Cygwin C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.cygwin.exe.debug.2065547499">
+								<option id="gnu.c.compiler.option.include.paths.1105430005" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="C:/Users/Advik/git/LabWork/CS6301/CS6301/CS6301/src"/>
+									<listOptionValue builtIn="false" value="C:/Users/Advik/git/LabWork/CS6301/CS6301/external"/>
+								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.1135822239" superClass="cdt.managedbuild.tool.gnu.c.compiler.input.cygwin"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.linker.cygwin.exe.debug.2118271872" name="Cygwin C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.cygwin.exe.debug.1184929732"/>
@@ -177,24 +178,34 @@
 							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.cygwin.exe.release.115217945" name="Cygwin C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.cygwin.exe.release.2665231"/>
 						</toolChain>
 					</folderInfo>
-					<folderInfo id="cdt.managedbuild.config.gnu.cygwin.exe.release.890706294.413300696" name="/" resourcePath="external">
-						<toolChain id="cdt.managedbuild.toolchain.gnu.cygwin.exe.release.2068939990" name="Cygwin GCC" superClass="cdt.managedbuild.toolchain.gnu.cygwin.exe.release" unusedChildren="">
+					<folderInfo id="cdt.managedbuild.config.gnu.cygwin.exe.release.890706294.1059674255" name="/" resourcePath="external">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.cygwin.exe.release.1787061839" name="Cygwin GCC" superClass="cdt.managedbuild.toolchain.gnu.cygwin.exe.release" unusedChildren="">
 							<targetPlatform id="cdt.managedbuild.target.gnu.platform.cygwin.exe.release" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.cygwin.exe.release"/>
-							<tool id="cdt.managedbuild.tool.gnu.assembler.cygwin.exe.release.1466087527" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.cygwin.exe.release.1719614389">
-								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.2051001486" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.cygwin.exe.release.1946311357" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.cygwin.exe.release.1719614389">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1080965675" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
-							<tool id="cdt.managedbuild.tool.gnu.archiver.cygwin.base.896901201" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.cygwin.base.1342293918"/>
-							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.374463183" name="Cygwin C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1620286576">
-								<option id="gnu.cpp.compiler.option.include.paths.199793182" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+							<tool id="cdt.managedbuild.tool.gnu.archiver.cygwin.base.495002873" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.cygwin.base.1342293918"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.8867524" name="Cygwin C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1620286576">
+								<option id="gnu.cpp.compiler.option.include.paths.443347176" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/external}&quot;"/>
 								</option>
-								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.501710483" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.1279886677" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin"/>
 							</tool>
-							<tool id="cdt.managedbuild.tool.gnu.c.compiler.cygwin.exe.release.1706842534" name="Cygwin C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.cygwin.exe.release.904826144">
-								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.914327999" superClass="cdt.managedbuild.tool.gnu.c.compiler.input.cygwin"/>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.cygwin.exe.release.1416032514" name="Cygwin C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.cygwin.exe.release.904826144">
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.2140045731" superClass="cdt.managedbuild.tool.gnu.c.compiler.input.cygwin"/>
 							</tool>
-							<tool id="cdt.managedbuild.tool.gnu.c.linker.cygwin.exe.release.353476589" name="Cygwin C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.cygwin.exe.release.606459471"/>
-							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.cygwin.exe.release.310751334" name="Cygwin C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.cygwin.exe.release.2665231"/>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.cygwin.exe.release.676423646" name="Cygwin C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.cygwin.exe.release.606459471"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.cygwin.exe.release.726517543" name="Cygwin C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.cygwin.exe.release.2665231"/>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="cdt.managedbuild.config.gnu.cygwin.exe.release.890706294.1931967506" name="/" resourcePath="src">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.cygwin.exe.release.951398646" name="Cygwin GCC" superClass="cdt.managedbuild.toolchain.gnu.cygwin.exe.release" unusedChildren="">
+							<tool id="cdt.managedbuild.tool.gnu.assembler.cygwin.exe.release.235876383" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.cygwin.exe.release.1719614389"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.cygwin.base.330811575" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.cygwin.base.1342293918"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.135369697" name="Cygwin C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.exe.release.1620286576"/>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.cygwin.exe.release.1591247257" name="Cygwin C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.cygwin.exe.release.904826144"/>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.cygwin.exe.release.696726214" name="Cygwin C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.cygwin.exe.release.606459471"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.cygwin.exe.release.1072200076" name="Cygwin C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.cygwin.exe.release.2665231"/>
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
