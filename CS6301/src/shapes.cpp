@@ -20,6 +20,16 @@ Shape::Shape(int a, int b)
 
 
 /***********************************************************************
+ *  Method: Shape::~Shape
+ *  Params:
+ * Effects:
+ ***********************************************************************/
+Shape::~Shape(void)
+{
+
+}
+
+/***********************************************************************
  *  Method: Shape::area
  *  Params: 
  * Returns: int
@@ -58,7 +68,7 @@ Shape::get_dimension1()
  * Effects: 
  ***********************************************************************/
 int *
-Shape::getHeight()
+Shape::getHeight() const
 {
     cerr << "Shape::getHeight()" << endl;
     return NULL;
@@ -85,7 +95,7 @@ Shape::setHeight(int *height)
  * Effects: 
  ***********************************************************************/
 int *
-Shape::getWidth()
+Shape::getWidth() const
 {
     cerr << "Shape::getWidth()" << endl;
     return NULL;

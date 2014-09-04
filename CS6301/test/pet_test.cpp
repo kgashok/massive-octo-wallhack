@@ -43,13 +43,14 @@ TEST_F(DogTest, DogPass)
 	ASSERT_TRUE(true);
 }
 
-TEST_F(DogTest, SilenceTest)
+TEST_F(DogTest, DogSound1)
 {
 	ASSERT_EQ (0, d.MakeSound1());
 	ASSERT_EQ ("NoName the Dog says: Woof! Woof!\n", d.MakeSound2());
+
 }
 
-TEST_F(DogTest, OnceMoreTest)
+TEST_F(DogTest, AnotherDogSound)
 {
 	Dog another_dog ("Doggie");
 	d = another_dog;
@@ -58,22 +59,43 @@ TEST_F(DogTest, OnceMoreTest)
 
 }
 
-TEST_F(DogTest, Destructors)
+
+TEST_F(DogTest, OverrideDogTest)
 {
-	Dog* a_dog = new Dog("Frankie");
-	delete a_dog;
+
+	// Dog another_dog ("Lion");
+	// d = another_dog;
+	// ASSERT_EQ ("Lion the Dog says: Roar! Roar!\n", d.WakeUp());
+
+	ASSERT_TRUE(false); // comment this out or delete after you've compiled successfully
+
+}
+
+TEST_F(DogTest, OverloadCatTest)
+{
+
+	// c = new Cat ("Kittie");
+	// ASSERT_EQ("Kittie the Cat says: Meow! Meow!\n and Meow!\n", c->MakeSound2(" and Meow!"));
+
+	ASSERT_TRUE(false); // comment this out or Delete after you've compiled successfully
 
 
 }
 
-TEST_F(DogTest, DestructorPet)
+TEST_F(DogTest, VirtualConstructor)
 {
+	// Dog d("Doggie");
+	// Dog* another_dog = d.clone();
+	// ASSERT_EQ("Doggie the Dog says: Woof! Woof!\n", another_dog->MakeSound2());
 
-	// When you uncomment the following lines, the compiler complains.
-	// What do you need to do to fix this?
-	// Pet* a_pet = new Pet("NoName");
-	// delete a_pet;
-
-	ASSERT_TRUE(false);  // change this to 'true' after you've compiled successfully
+	ASSERT_TRUE(false);  // uncomment this after you've compiled successfully
 }
 
+TEST_F(DogTest, VirtualConstructor2)
+{
+	// Dog d("Doggie");
+	// Dog* another_dog = d.create();
+	// ASSERT_EQ("NoName the Dog says: Woof! Woof!\n", another_dog->MakeSound2());
+
+	ASSERT_TRUE(false);  // uncomment this after you've compiled successfully
+}
