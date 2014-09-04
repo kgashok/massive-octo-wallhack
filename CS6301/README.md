@@ -1,6 +1,7 @@
 ### World-class Lab Environment
 1. Eclipse - a industry strength IDE
 2. Google Unit Testing Framework
+  - Why TDD? Test Driven Development http://buff.ly/1xbPnx5 
   - Why Google's framework and not something else? [FAQ](https://code.google.com/p/googletest/wiki/FAQ#Why_should_I_use_Google_Test_instead_of_my_favorite_C++_testing)
     - Why not? "gtest - Google Test is Chromium's C++ test harness." http://buff.ly/1nVqBYp 
 3. `Git` - for version control and opportunities for **mentors** (_far and near, and the world over_) to give you expert advice. 
