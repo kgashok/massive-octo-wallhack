@@ -1,0 +1,130 @@
+// shapes.h
+//
+
+#ifndef LZZ_shapes_h
+#define LZZ_shapes_h
+#define LZZ_INLINE inline
+class Shape
+{
+protected:
+  int * width;
+  int * height;
+public:
+  Shape (int a = 0, int b = 0);
+  virtual ~Shape() = 0;
+  virtual int area ();
+  int get_dimension1 ();
+  int * getHeight () const;
+  void setHeight (int * height);
+  int * getWidth () const;
+  void setWidth (int * width);
+};
+class Rectangle : public Shape
+{
+public:
+  Rectangle (int a = 0, int b = 0);
+  int area ();
+};
+class Triangle : public Shape
+{
+public:
+  Triangle (int a = 1, int b = 1);
+  int area ();
+};
+#undef LZZ_INLINE
+#endif
+
+/***********************************************************************
+ * AUTHOR: KITE <KITE>
+ *   FILE: shapes.cpp
+ *   DATE: Mon Sep 01 09:41:27 2014
+ *  DESCR: 
+ ***********************************************************************/
+#include "shapes.h"
+#include <iostream>
+using namespace std;
+
+Shape::Shape(int a, int b)
+{
+    cerr << "Shape::Shape()" << endl;
+}
+
+Shape::~Shape(void)
+{
+
+}
+
+int
+Shape::area()
+{
+    int dummy;
+
+    cerr << "Shape::area()" << endl;
+    return dummy;
+}
+
+int
+Shape::get_dimension1()
+{
+    int dummy;
+
+    cerr << "Shape::get_dimension1()" << endl;
+    return dummy;
+}
+
+int *
+Shape::getHeight() const
+{
+    cerr << "Shape::getHeight()" << endl;
+    return NULL;
+}
+
+void
+Shape::setHeight(int *height)
+{
+    cerr << "Shape::setHeight()" << endl;
+}
+
+int *
+Shape::getWidth() const
+{
+    cerr << "Shape::getWidth()" << endl;
+    return NULL;
+}
+
+void
+Shape::setWidth(int *width)
+{
+    cerr << "Shape::setWidth()" << endl;
+}
+
+
+Rectangle::Rectangle(int a, int b)
+{
+    cerr << "Rectangle::Rectangle()" << endl;
+}
+
+
+int
+Rectangle::area()
+{
+    int dummy;
+
+    cerr << "Rectangle::area()" << endl;
+    return dummy;
+}
+
+Triangle::Triangle(int a, int b)
+{
+    cerr << "Triangle::Triangle()" << endl;
+}
+
+
+int
+Triangle::area()
+{
+    int dummy;
+
+    cerr << "Triangle::area()" << endl;
+    return dummy;
+}

@@ -1,0 +1,188 @@
+/*
+ * shape_test.cpp
+ *
+ *  Created on: Aug 29, 2014
+ *      Author: lifebalance
+ */
+
+#include "gtest/gtest.h"
+#include "shapes.h"
+
+class ShapeTest: public ::testing::Test {
+protected:
+	Shape *shape;
+};
+
+// typical Main function
+// int main( )
+
+TEST_F(ShapeTest, ConstructOverLoad) {
+
+	Rectangle rec;
+	shape = &rec;
+	ASSERT_EQ(0, shape->get_dimension1());
+
+	Rectangle rec2(10);
+	shape = &rec2;
+	ASSERT_EQ(10, shape->get_dimension1());
+
+	Triangle tri;
+	shape = &tri;
+	ASSERT_EQ(1, shape->get_dimension1());
+
+	Triangle tri2(30);
+	shape = &tri2;
+	ASSERT_EQ(30, shape->get_dimension1());
+
+}
+
+TEST_F(ShapeTest, ShapeArea) {
+	Rectangle rec(10, 7);
+	Triangle tri(10, 5);
+
+	// store the address of Rectangle
+	shape = &rec;
+	// call rectangle area.
+	// ASSERT_EQ("Rectangle class area :", shape->area());
+	ASSERT_EQ(70, shape->area());
+
+	// store the address of Triangle
+	shape = &tri;
+	// call triangle area.
+	// ASSERT_EQ("Triangle class area :", shape->area());
+	ASSERT_EQ(25, shape->area());
+
+	// return 0;
+}
+
+
+TEST_F(ShapeTest, SetterGetters) {
+	shape = new Rectangle(0,0);
+	ASSERT_EQ(0, shape->area());
+
+	int height = 10;
+	int width = 100;
+	shape->setHeight(&height);
+	shape->setWidth(&width);
+	// to trouble shoot this..
+	// cout << "shape area: "  << shape->area() << endl;
+	ASSERT_EQ(1000, shape->area());
+}
+
+TEST_F(ShapeTest, DestructorCleanup) {
+
+	// Uncomment the 2 code lines below; and fix the compiler error by
+	// defining a suitable function, which also performs the necessary memory clean-up
+	//
+	//
+	// shape = new Shape(0,0);
+	// delete shape;
+
+	ASSERT_TRUE(false);  // uncomment this after you've compiled successfully
+
+}
+
+// ==================================================================
+
+/*
+ * pet_test.cpp
+ *
+ *  Created on: May 12, 2014
+ *      Author: lifebalance
+ */
+
+#include "gtest/gtest.h"
+#include "pet.h"
+
+
+Dog defPet("NoName");
+
+class DogTest : public ::testing::Test {
+protected:
+	Dog& d;
+	Cat* c;
+public:
+	DogTest () : d(defPet), c(NULL) {}
+	~DogTest () {}
+
+};
+
+
+TEST_F(DogTest, CatPass)
+{
+	ASSERT_TRUE(true);
+
+}
+
+TEST_F(DogTest, CatPass2)
+{
+	const char* n = "Kittie";
+	c =  new Cat (n);
+
+	ASSERT_EQ("Kittie the Cat says: Meow! Meow!\n", c->MakeSound2());
+
+}
+
+
+TEST_F(DogTest, DogPass)
+{
+	ASSERT_TRUE(true);
+}
+
+TEST_F(DogTest, DogSound1)
+{
+	ASSERT_EQ (0, d.MakeSound1());
+	ASSERT_EQ ("NoName the Dog says: Woof! Woof!\n", d.MakeSound2());
+
+}
+
+TEST_F(DogTest, AnotherDogSound)
+{
+	Dog another_dog ("Doggie");
+	d = another_dog;
+
+	ASSERT_EQ ("Doggie the Dog says: Woof! Woof!\n", d.MakeSound2());
+
+}
+
+
+TEST_F(DogTest, OverrideDogTest)
+{
+
+	// Dog another_dog ("Lion");
+	// d = another_dog;
+	// ASSERT_EQ ("Lion the Dog says: Roar! Roar!\n", d.WakeUp());
+
+	ASSERT_TRUE(false); // comment this out or delete after you've compiled successfully
+
+}
+
+TEST_F(DogTest, OverloadCatTest)
+{
+
+	// c = new Cat ("Kittie");
+	// ASSERT_EQ("Kittie the Cat says: Meow! Meow!\n and Meow!\n", c->MakeSound2(" and Meow!"));
+
+	ASSERT_TRUE(false); // comment this out or Delete after you've compiled successfully
+
+
+}
+
+TEST_F(DogTest, VirtualConstructor)
+{
+	// Dog d("Doggie");
+	// Dog* another_dog = d.clone();
+	// ASSERT_EQ("Doggie the Dog says: Woof! Woof!\n", another_dog->MakeSound2());
+
+	ASSERT_TRUE(false);  // uncomment this after you've compiled successfully
+}
+
+TEST_F(DogTest, VirtualConstructor2)
+{
+	// Dog d("Doggie");
+	// Dog* another_dog = d.create();
+	// ASSERT_EQ("NoName the Dog says: Woof! Woof!\n", another_dog->MakeSound2());
+
+	ASSERT_TRUE(false);  // uncomment this after you've compiled successfully
+}
+

@@ -1,0 +1,177 @@
+// pet.h
+//
+
+#ifndef LZZ_pet_h
+#define LZZ_pet_h
+#define LZZ_INLINE inline
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Pet {
+protected:
+	string Name;
+public:
+	Pet();
+	Pet(string n);
+	virtual void MakeSound();
+	virtual int MakeSound1();
+	virtual string MakeSound2();
+	void WakeUp();
+	virtual ~ Pet();
+};
+class Cat: public Pet {
+public:
+	Cat();
+	Cat(string n);
+	Cat(char const *n);
+	void MakeSound();
+	virtual string MakeSound2();
+};
+class Dog: public Pet {
+public:
+	Dog();
+	Dog(string n);
+	Dog(char const * n);
+	Dog(Dog const & dg);
+	Dog & operator =(Dog rhs);
+	void MakeSound();
+	virtual string MakeSound2();
+};
+#undef LZZ_INLINE
+#endif
+
+/***********************************************************************
+ * AUTHOR: KITE <KITE>
+ *   FILE: pet_stubs.cpp
+ *   DATE: Sat Aug 30 17:31:13 2014
+ *  DESCR: 
+ ***********************************************************************/
+#include "pet.h"
+#include <iostream>
+
+
+Pet::Pet()
+{
+    cerr << "Pet::Pet()" << endl;
+}
+
+Pet::Pet(string n)
+{
+    cerr << "Pet::Pet()" << endl;
+
+}
+
+void
+Pet::MakeSound()
+{
+    cerr << "Pet::MakeSound()" << endl;
+}
+
+int
+Pet::MakeSound1()
+{
+    int dummy =0;
+
+    cerr << "Pet::MakeSound1()" << endl;
+    return dummy;
+}
+
+
+string
+Pet::MakeSound2()
+{
+    cerr << "Pet::MakeSound2()" << endl;
+
+    string dummy;
+
+    return dummy;
+}
+
+void
+Pet::WakeUp()
+{
+    cerr << "Pet::WakeUp()" << endl;
+}
+
+
+Pet::~Pet()
+{
+    cerr << "Pet::~Pet()" << endl;
+}
+
+
+Cat::Cat(string n) : Pet (n)
+{
+    cerr << "Cat::Cat()" << endl;
+}
+
+
+void
+Cat::MakeSound()
+{
+    cerr << "Cat::MakeSound()" << endl;
+}
+
+Dog::Dog() : Pet ("NoName")
+{
+    cerr << "Dog::Dog()" << endl;
+}
+
+
+Dog::Dog(string n) : Pet (n)
+{
+    cerr << "Dog::Dog()" << endl;
+}
+
+Dog::Dog(const char *n) : Pet (n)
+{
+    cerr << "Dog::Dog()" << endl;
+}
+
+
+Dog::Dog(const Dog &dg) : Pet (dg.Name)
+{
+    cerr << "Dog::Dog()" << endl;
+}
+
+
+Dog &
+Dog::operator=(Dog rhs)
+{
+    cerr << "Dog::operator=()" << endl;
+
+}
+
+void
+Dog::MakeSound()
+{
+    cerr << "Dog::MakeSound()" << endl;
+}
+
+
+string
+Dog::MakeSound2()
+{
+    string dummy;
+
+    cerr << "Dog::MakeSound2()" << endl;
+
+    return dummy;
+}
+
+Cat::Cat() :
+		Pet() {
+}
+
+Cat::Cat(const char* n) :
+		Pet(n) {
+}
+
+string Cat::MakeSound2(void) {
+	string dummy;
+
+	return dummy;
+
+}
