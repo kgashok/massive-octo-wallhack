@@ -71,8 +71,8 @@ TEST_F(ShapeTest, SetterGetters) {
 
 TEST_F(ShapeTest, DestructorCleanup) {
 
-	// Uncomment the 2 code lines below; and fix the compiler error by
-	// defining a suitable function, which also performs the necessary memory clean-up
+	//Uncomment the 2 code lines below; and fix the compiler error by
+	//defining a suitable function, which also performs the necessary memory clean-up
 	//
 	//
 	// shape = new Shape(0,0);

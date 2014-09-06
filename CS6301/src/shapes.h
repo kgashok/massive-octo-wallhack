@@ -12,7 +12,7 @@ protected:
 public:
   Shape (int a = 0, int b = 0);
   virtual ~Shape() = 0;
-  virtual int area ();
+  int area ();
   int get_dimension1 ();
   int * getHeight () const;
   void setHeight (int * height);
