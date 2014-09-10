@@ -45,8 +45,9 @@ TEST_F(DogTest, DogPass)
 
 TEST_F(DogTest, DogSound1)
 {
-	ASSERT_EQ (0, d.MakeSound1());
-	ASSERT_EQ ("NoName the Dog says: Woof! Woof!\n", d.MakeSound2());
+	Dog a_dog;
+	ASSERT_EQ (0, a_dog.MakeSound1());
+	ASSERT_EQ ("NoName the Dog says: Woof! Woof!\n", a_dog.MakeSound2());
 
 }
 
