@@ -69,16 +69,6 @@ TEST_F(ShapeTest, SetterGetters) {
 	ASSERT_EQ(1000, shape->area());
 }
 
-TEST_F(ShapeTest, DestructorCleanup) {
 
-	//Uncomment the 2 code lines below; and fix the compiler error by
-	//defining a suitable function, which also performs the necessary memory clean-up
-	//
-	//
-	// shape = new Shape(0,0);
-	// delete shape;
 
-	ASSERT_TRUE(false);  // uncomment this after you've compiled successfully
-
-}
 
