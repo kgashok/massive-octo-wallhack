@@ -1,0 +1,98 @@
+/*
+ * shapePetsExtra.cpp
+ *
+ *  Created on: Sep 10, 2014
+ *      Author: lifebalance
+ */
+
+#include "gtest/gtest.h"
+#include "shapes.h"
+#include "pet.h"
+
+class ShapeTest: public ::testing::Test {
+protected:
+	Shape *shape;
+};
+
+
+TEST_F(ShapeTest, DestructorCleanup) {
+
+	// Uncomment the lines below; and fix the compiler error by
+	// defining a suitable function, which also performs the necessary memory clean-up
+	//
+	// shape = new Shape(0,0);
+	// delete shape;
+
+	ASSERT_TRUE(false);
+
+}
+
+extern Dog defPet;
+
+class DogTest : public ::testing::Test {
+protected:
+	// Dog d("Doggie");
+	Dog& d;
+	Cat* c;
+public:
+	DogTest () : d(defPet), c(NULL) {}
+	~DogTest () {}
+
+};
+
+
+TEST_F(DogTest, VirtualConstructor)
+{
+	// Dog d("Doggie");
+	// Dog* another_dog = d.clone();
+	// ASSERT_EQ("Doggie the Dog says: Woof! Woof!\n", another_dog->MakeSound2());
+
+	ASSERT_TRUE(false);  // uncomment this after you've compiled successfully
+}
+
+
+TEST_F(DogTest, VirtualConstructor2)
+{
+	// Dog d("Doggie");
+	// Dog* another_dog = d.create();
+	// ASSERT_EQ("NoName the Dog says: Woof! Woof!\n", another_dog->MakeSound2());
+
+	ASSERT_TRUE(false);  // uncomment this after you've compiled successfully
+}
+
+//
+// Ignore this test for the time being
+//
+TEST_F(DogTest, DestructorPet)
+{
+
+	// When you uncomment the following lines, the compiler complains.
+	// What do you need to do to fix this?
+	// Pet* a_pet = new Pet("NoName");
+	// delete a_pet;
+
+	ASSERT_TRUE(false); // change this to 'true' after you've compiled successfully
+}
+
+TEST_F(DogTest, OverrideDogTest)
+{
+
+	// Dog another_dog ("Lion");
+	// d = another_dog;
+	// ASSERT_EQ ("Lion the Dog says: Roar! Roar!\n", d.WakeUp());
+
+	ASSERT_TRUE(false); // comment this out or delete after you've compiled successfully
+
+}
+
+TEST_F(DogTest, OverloadCatTest)
+{
+
+	// c = new Cat ("Kittie");
+	// ASSERT_EQ("Kittie the Cat says: Meow! Meow!\n and Meow!\n", c->MakeSound2(" and Meow!"));
+
+	ASSERT_TRUE(false); // comment this out or Delete after you've compiled successfully
+
+
+}
+
