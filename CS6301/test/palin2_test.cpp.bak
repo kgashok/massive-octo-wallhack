@@ -9,92 +9,92 @@ bool check_if_palindrome2(const char *s);
 #include "gtest/gtest.h"
 
 
-class PalTest : public ::testing::Test {
+class PalTest2 : public ::testing::Test {
 
 };
 
 
-TEST_F(PalTest, SimpleTest)
+TEST_F(PalTest2, SimpleTest)
 {
 	ASSERT_TRUE(true);
 }
 
-TEST_F(PalTest, EmptyString)
+TEST_F(PalTest2, EmptyString)
 {
 	ASSERT_EQ(true, check_if_palindrome2(""));
 }
 
-TEST_F(PalTest, SingleCharacter)
+TEST_F(PalTest2, SingleCharacter)
 {
 	ASSERT_EQ(true, check_if_palindrome2("a"));
 }
 
-TEST_F(PalTest, TwoCharacters)
+TEST_F(PalTest2, TwoCharacters)
 {
 	ASSERT_EQ(true, check_if_palindrome2("zz"));
 }
 
-TEST_F(PalTest, Three)
+TEST_F(PalTest2, Three)
 {
 	ASSERT_EQ(false, check_if_palindrome2("zza"));
 }
 
-TEST_F(PalTest, Medium)
+TEST_F(PalTest2, Medium)
 {
 	ASSERT_EQ(false, check_if_palindrome2("medium"));
 }
 
-TEST_F(PalTest, Madam)
+TEST_F(PalTest2, Madam)
 {
 	ASSERT_EQ(true, check_if_palindrome2("madam"));
 }
 
-TEST_F(PalTest, RaceCar)
+TEST_F(PalTest2, RaceCar)
 {
 	ASSERT_EQ(true, check_if_palindrome2("race car"));
 }
 
-TEST_F(PalTest, MadamMadam)
+TEST_F(PalTest2, MadamMadam)
 {
 	ASSERT_EQ(true, check_if_palindrome2("madam, madam"));
 }
 
-TEST_F(PalTest, MadamPunc)
+TEST_F(PalTest2, MadamPunc)
 {
 	ASSERT_EQ(true, check_if_palindrome2("madam! madam!"));
 }
 
-TEST_F(PalTest, Madam2Madam)
+TEST_F(PalTest2, Madam2Madam)
 {
 	ASSERT_EQ(true, check_if_palindrome2("madam2madam"));
 }
 
-TEST_F(PalTest, MadamAndBob)
+TEST_F(PalTest2, MadamAndBob)
 {
 	ASSERT_EQ(false, check_if_palindrome2("madam bob"));
 }
 
-TEST_F(PalTest, SimpleSentence)
+TEST_F(PalTest2, SimpleSentence)
 {
 	ASSERT_EQ(false, check_if_palindrome2("I went there"));
 }
 
-TEST_F(PalTest, MadamAnd2)
+TEST_F(PalTest2, MadamAnd2)
 {
 	ASSERT_EQ(false, check_if_palindrome2("I madam I!, 2 Mad am I!"));
 }
 
-TEST_F(PalTest, Madam42)
+TEST_F(PalTest2, Madam42)
 {
 	ASSERT_EQ(true, check_if_palindrome2("I 4 madam 2: I!, 2 mad am 4, I!"));
 }
 
-TEST_F(PalTest, Madam42Capital)
+TEST_F(PalTest2, Madam42Capital)
 {
 	ASSERT_EQ(true, check_if_palindrome2("I 4 madam 2: I!, 2 Mad am 4, I!"));
 }
 
-TEST_F(PalTest, Madam44)
+TEST_F(PalTest2, Madam44)
 {
 	ASSERT_EQ(false, check_if_palindrome2("I 4 madam I!, 2 mad am 44, I!"));
 }
@@ -102,17 +102,17 @@ TEST_F(PalTest, Madam44)
 // Additional tests to check for palindromes that match on the Skip levels
 // For Skip level 2
 
-TEST_F(PalTest, medimTest)
+TEST_F(PalTest2, medimTest)
 {
 	ASSERT_EQ(true, check_if_palindrome2("medim"));
 }
 
-TEST_F(PalTest, Malayalem)
+TEST_F(PalTest2, Malayalem)
 {
 	ASSERT_EQ(true, check_if_palindrome2("Malayalem"));
 }
 
-TEST_F(PalTest, Madam422)
+TEST_F(PalTest2, Madam422)
 {
 	ASSERT_EQ(true, check_if_palindrome2("I 2 madam 2: I!, 2 mad am 4, I!"));
 }
